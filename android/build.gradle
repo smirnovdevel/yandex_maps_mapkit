@@ -49,7 +49,7 @@ android {
     }
 
     dependencies {
-        api 'com.yandex.android:maps.mobile@aar'
+        api 'com.yandex.android:maps.mobile:4.33.1-beta-full-flutter'
     }
 
     defaultConfig {
