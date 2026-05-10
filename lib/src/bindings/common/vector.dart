@@ -37,6 +37,9 @@ class Vector<T> extends ListBase<T> implements Finalizable {
   }
 
   @override
+  final int length;
+
+  @override
   set length(int _) => throw UnsupportedError("Vector read-only");
 
   @override
@@ -57,9 +60,6 @@ class Vector<T> extends ListBase<T> implements Finalizable {
   static final _finalizer = NativeFinalizer(_vector_free_native);
   final Pointer<Void> _ptr;
   final T Function(Pointer<Void>) _f;
-
-  @override
-  final length;
 }
 
 @internal
