@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   # Flutter dynamicaly lookup all symbols from executable, so we need for
   # all exported symbols will be available from executable.
   s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC -all_load' }
-  s.dependency 'YandexMapsMobile'
+  s.dependency 'YandexMapsMobile', '4.33.1-beta'
   # s.vendored_frameworks = 'Frameworks/YandexMapsMobile.xcframework'
   # s.resources = 'Frameworks/YandexMapsMobile.bundle'
 
