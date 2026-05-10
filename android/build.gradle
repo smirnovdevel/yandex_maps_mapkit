@@ -18,11 +18,6 @@ allprojects {
     repositories {
         google()
         mavenCentral()
-
-        maven {
-            url 'https://maven.yandex.ru/repo'
-        }
-
         flatDir {
             dirs 'libs'
         }
@@ -56,8 +51,4 @@ android {
     defaultConfig {
         minSdkVersion 26
     }
-}
-
-dependencies {
-    api 'com.yandex.android:maps.mobile:4.33.1-beta-full-flutter'
 }
