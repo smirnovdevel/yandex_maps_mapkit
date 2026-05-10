@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
   s.platform = :ios, "7.0"
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
+  s.dependency 'YandexMapsMobile'
 
   s.frameworks = 'CoreFoundation', 'Foundation', 'CoreLocation', 'UIKit', 'OpenGLES', 'SystemConfiguration', 'CoreGraphics', 'QuartzCore', 'Security', 'CoreTelephony', 'CoreMotion', 'DeviceCheck', 'NetworkExtension'
 
@@ -20,8 +21,8 @@ Pod::Spec.new do |s|
   # Flutter dynamicaly lookup all symbols from executable, so we need for
   # all exported symbols will be available from executable.
   s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC -all_load' }
-  s.vendored_frameworks = 'Frameworks/YandexMapsMobile.xcframework'
-  s.resources = 'Frameworks/YandexMapsMobile.bundle'
+  # s.vendored_frameworks = 'Frameworks/YandexMapsMobile.xcframework'
+  # s.resources = 'Frameworks/YandexMapsMobile.bundle'
 
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
   s.swift_version = '5.0'
